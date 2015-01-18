@@ -1,11 +1,17 @@
-SensioLabs Security Advisories Database
-=======================================
+PHP Security Advisories Database
+================================
 
-The SensioLabs security advisories database references known security
+The PHP Security Advisories Database references known security
 vulnerabilities in various PHP projects and libraries. This database **must
 not** serve as the primary source of information for security issues, it is
 not authoritative for any referenced software, but it allows to centralize
 information for convenience and easy consumption.
+
+License
+-------
+
+The PHP security advisories database is free and unencumbered software released
+into the public domain.
 
 Browsing Vulnerabilities
 ------------------------
@@ -73,6 +79,8 @@ Contributing security advisories is as easy as it can get:
             Composer -- `[>=2.0.0,<2.0.17]`).
 
   * If you have a CVE identifier, add it under the `cve` key.
+
+  * Make sure your file validates by running `php validator.php` from the root of this project.
 
 If some affected code is available through different Composer entries (like
 when you have read-only subtree splits of a main repository), duplicate the
